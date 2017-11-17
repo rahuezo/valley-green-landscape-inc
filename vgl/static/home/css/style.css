@@ -1,32 +1,74 @@
 body {
   overflow-x: hidden;
-  padding-top: 50px;
-  padding-bottom: 10%;
-}
-#wrapper {
   width: 100%;
+  /*padding-top: 50px;*/
+  /*padding-bottom: 10%;*/
 }
+
+h1 {
+  /*font-size: 3rem;*/
+}
+
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+#content {
+  height: 100%;
+  padding-bottom: 50vh;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background: #111;
+  /*padding: 3rem;*/
+  /*height: 20vh;*/
+}
+
+#footer #copyright {
+  color: #555;
+}
+
+#footer img {
+  height: 60px;
+}
+
+#footer a {
+  color: #CCC;
+  transition: all ease-out 0.1s;
+}
+
+#footer a:hover {
+  text-decoration: none;
+  font-size: 1.05rem; 
+  color: #FFF;
+}
+
 .navbar {
   padding-left: 5%;
   padding-right: 5%;
 }
 
 .navbar .nav-link {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 .navbar.custom-bg {
   background: #111;
 }
 
 .navbar .navbar-brand {
-  font-size: 1.3rem;
+  font-size: 1rem;
   opacity: 0.85;
   transition: all ease-out 0.1s;
 }
 
 .navbar .navbar-brand:hover {
   opacity: 1;
-  font-size: 1.31rem;
+  font-size: 1.01rem;
 }
 
 .navbar #navbar-logo {
@@ -67,7 +109,7 @@ button, a {
   background-position: center;
   background-size: cover;
 }
-#why-choose-us h1 {
+#why-choose-us h1, #work-neighborhood h1 {
   margin-bottom: 5vh;
 }
 
@@ -85,6 +127,10 @@ button, a {
   margin-top: 5vh;
   margin-bottom: 6vh;
   text-align: center;
+}
+
+#hero-var-name {
+  word-wrap: break-word;
 }
 
 #work-neighborhood {
