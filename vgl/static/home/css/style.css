@@ -1,9 +1,11 @@
 body {
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   padding-top: 50px;
   padding-bottom: 10%;
 }
-
+#wrapper {
+  width: 100%; 
+}
 .navbar {
   padding-left: 5%;
   padding-right: 5%;
@@ -83,4 +85,8 @@ button, a {
   margin-top: 5vh;
   margin-bottom: 6vh;
   text-align: center;
+}
+
+#work-neighborhood {
+  padding-top: 4vh;
 }
