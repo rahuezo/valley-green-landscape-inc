@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <title>Valley Green Landscape</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- Local CSS -->
+
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-bg fixed-top">
+      <a class="navbar-brand" href="{% url 'home:index' %}">
+        <img src="{% static 'home/img/logo/logo.png' %}" alt="Valley Green Landscape Inc." id="navbar-logo">
+        Valley Green Landscape
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-0 text-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="wrapper">
+      <div id="header">
+        <div class="jumbotron">
+          <div class="container text-center">
+            <div id="hero-brand">
+              <img src="{% static 'home/img/logo/logo.png' %}" alt="Valley Green Landscape Inc." id="hero-logo" class="mb-4">
+              <h3 class="text-light">Valley Green Landscape, Inc.</h3>
+              <h3><a href="tel:8183621668">(818) 362-1668</a></h3>
+            </div>
+            <hr class="my-4 hero-hr">
+            <h1 class="display-3">We Do <span id="job-name-var"></span></h1>
+            <p id="hero-inquiry" class="lead my-4">Inquire about residential and commercial projects and get a free estimate.</p>
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 mr-auto ml-auto">
+                <a class="btn btn-outline-light btn-lg mt-4 btn-block" href="#" role="button">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div id="why-choose-us">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <div class="container">
+                <h1 class="display-3">Why Choose Us?</h1>
+                <div id="choose-us-reasons" class="mb-4">
+                  <p>We have <strong>24+</strong> years of experience.</p>
+                  <p>We provide our services <strong>every day</strong> of the week.</p>
+                  <p>We have continuously served <strong>100+</strong> customers for decades.</p>
+                  <p>We provide quality work at a reasonable and competitive price.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 mr-auto ml-auto mb-4">
+              <a class="btn btn-outline-dark btn-lg btn-block mt-4" href="#" role="button">Read Our Reviews</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="most-popular">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <div class="container">
+                  <h1 class="display-3 text-light">Our Most Popular Work</h1>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="card">
+                  <img class="card-img-top" src="http://165.227.29.174/static/valley_green_landscape/img/garden.jpeg" alt="Gardening Service">
+                  <div class="card-body">
+                    <h4 class="card-title">Gardening Service</h4>
+                    <p class="card-text">
+                      First impressions matter and one of the best ways to create an inviting home is by taking care of your lawn.
+                    </p>
+                    <a href="#" class="btn btn-primary">Request Service</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="card">
+                  <img class="card-img-top" src="http://artificialturfexpress.com/wp-content/uploads/2015/04/Artificialturf_support.jpg" alt="Synthetic Turf">
+                  <div class="card-body">
+                    <h4 class="card-title">Synthetic Turf</h4>
+                    <p class="card-text">
+                      Want a green lawn year-round? Opt for synthetic turf and we will take care of the installation and maintenance.
+                    </p>
+                    <a href="#" class="btn btn-primary">Request Service</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="card">
+                  <img class="card-img-top" src="http://wichita-sprinklers.com/wp-content/uploads/2015/05/gal9.jpg" alt="Sprinkler Installation">
+                  <div class="card-body">
+                    <h4 class="card-title">Sprinkler Installation</h4>
+                    <p class="card-text">
+                      Don't have time to water your lawn? Let us automate the process for you by installing a new irrigation system.
+                    </p>
+                    <a href="#" class="btn btn-primary">Request Service</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <script src="{% static 'home/js/main.js' %}" charset="utf-8"></script>
+
+    <script type="text/javascript">
+      let job_names = ['Gardening Service          ', 'Sodding and Reseeding      ', 'Valve Replacement          ', 'Sprinkler Installation     ', 'Synthetic Turf Installation', 'Mulch and Gravel Design    ', 'Tree Trimming              ', 'Palm and Tree Cleanup      ', 'Stump Grinding             '];
+      let servicesSpan = '#job-name-var';
+      let counter = 1;
+
+      $(servicesSpan).text(job_names[0]);
+      setInterval(function() {
+        displayServices(servicesSpan);
+      }, 4000);
+
+
+
+
+    </script>
+  </body>
+</html>

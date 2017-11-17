@@ -1,0 +1,86 @@
+body {
+  overflow-x: hidden;
+  padding-top: 50px;
+  padding-bottom: 10%;
+}
+
+.navbar {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.navbar .nav-link {
+  font-size: 1.3rem;
+}
+.navbar.custom-bg {
+  background: #111;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.3rem;
+  opacity: 0.85;
+  transition: all ease-out 0.1s;
+}
+
+.navbar .navbar-brand:hover {
+  opacity: 1;
+  font-size: 1.31rem;
+}
+
+.navbar #navbar-logo {
+  height: 50px;
+}
+
+#hero-logo {
+  max-height: 10vh;
+}
+
+#hero-inquiry {
+  font-size: 1.5rem;
+}
+
+#hero-brand h3 a {
+  color: #DDD;
+  transition: all ease-out 0.1s;
+}
+
+#hero-brand h3 a:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.hero-hr {
+  max-width: 40vw;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+button, a {
+  cursor: pointer;
+}
+
+#header .jumbotron {
+  border-radius: 0px;
+  color: #FFF;
+  background: url('../img/hero-img/hero-bg-1.png');
+  background-position: center;
+  background-size: cover;
+}
+#why-choose-us h1 {
+  margin-bottom: 5vh;
+}
+
+#choose-us-reasons p {
+  font-size: 1.5em;
+  line-height: 150%;
+}
+
+#most-popular {
+  background: #111;
+  padding-top: 4vh;
+}
+
+#most-popular .card {
+  margin-top: 5vh;
+  margin-bottom: 6vh;
+  text-align: center;
+}
