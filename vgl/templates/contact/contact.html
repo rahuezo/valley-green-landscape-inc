@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     {% load static %}
-    <title>Valley Green Landscape</title>
+    <title>Valley Green Landscape: Contact Us</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
@@ -30,17 +30,17 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto mr-0 text-center">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="{% url 'home:index' %}">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'services:services' %}">Services</a>
+            <a class="nav-link" href="{% url 'services:services' %}">Services <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Testimonials</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'contact:contact' %}">Contact  <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'about:about' %}">About Us</a>
@@ -55,106 +55,63 @@
             <div id="hero-brand">
               <img src="{% static 'home/img/logo/logo.png' %}" alt="Valley Green Landscape Inc." id="hero-logo" class="mb-4">
               <h3 class="text-light">Valley Green Landscape, Inc.</h3>
-              <h3><a href="tel:8183621668">(818) 362-1668</a></h3>
             </div>
             <hr class="my-4 hero-hr">
-            <h1 id="hero-var-name">We Offer <span class="text-center" id="job-name-var"></span></h1>
-            <p id="hero-inquiry" class="lead my-0">Inquire about residential and commercial projects and get a free estimate.</p>
+            <h1 id="hero-var-name">Contact Us</h1>
             <div class="row">
-              <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 mr-auto ml-auto">
-                <a class="btn btn-outline-light btn-lg mt-4 btn-block" href="#" role="button">Contact Us</a>
+              <div class="col-lg-12 text-center">
+                <h2><i class="fa fa-map-marker"></i> Aztec St. Sylmar, CA 91342</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <h2><i class="fa fa-phone"></i> <a href="tel:8183621668">(818) 362-1668</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <h2><a href="mailto:valleygreenlandscapeinc.@gmail.com"><i class="fa fa-envelope"></i> valleygreenlandscapeinc.@gmail.com</a></h2>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div id="content">
-        <div id="why-choose-us">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12 text-center">
-                <h1>Why Choose Us?</h1>
-                <div id="choose-us-reasons" class="mb-4">
-                  <p>We have <strong>24+</strong> years of experience.</p>
-                  <p>We provide our services <strong>every day</strong> of the week.</p>
-                  <p>We have continuously served <strong>100+</strong> customers for decades.</p>
-                  <p>We provide quality work at a reasonable and competitive price.</p>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-4">
-              <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 mr-auto ml-auto mb-4">
-                <a class="btn btn-outline-dark btn-lg btn-block mt-4" href="#" role="button">Read Our Reviews</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="most-popular">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-12 text-center">
-                <div class="container">
-                  <h1 class="text-light">Our Most Popular Work</h1>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="card">
-                  <img class="card-img-top" src="http://165.227.29.174/static/valley_green_landscape/img/garden.jpeg" alt="Gardening Service">
-                  <div class="card-body">
-                    <h4 class="card-title">Gardening Service</h4>
+        <div class="container">
+          <div class="row my-2">
+            <div class="col-sm-12">
+              <div class="card">
+                <img class="card-img-top" src="{% static 'about/img/about-banner.png' %}" alt="Card image cap">
+                <div class="card-body">
+                  <h2 class="card-title my-4 text-center">Valley Green Landscape, Inc.</h2>
+                  <div id="about-paragraph">
                     <p class="card-text">
-                      First impressions matter and one of the best ways to create an inviting home is by taking care of your lawn.
+                      <strong>Cecilio Sandoval</strong> started his journey as a landscape professional in the early 1990s in Los Angeles. He started off as a day laborer, and quickly moved up the ladder to become the supervisor of [insert company name].
                     </p>
-                    <a href="#" class="btn btn-primary">Request Service</a>
+                    <p class="card-text">
+                       His love for gardening and landscaping made starting his own business an obvious choice. This now thriving business started as a one-man operation called Sandoval Landscaping and his attention to detail quickly won him lifetime clients.
+                    </p>
+                    <p class="card-text">
+                       As business started booming, he expanded his business to include more family members. His sons, <strong>Raymond</strong> and <strong>Kevin Sandoval</strong> grew up watching their father work hard every day and in turn made them also fall in love with the work.
+                    </p>
+                    <p class="card-text">
+                       Wanting to expand the business horizon of the company, <strong>Valley Green Landscape</strong> was born. Valley Green Landscape Incorporated is a family-owned business that is bonded and insured ready to provide both residential and commercial services.
+                    </p>
                   </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="card">
-                  <img class="card-img-top" src="http://artificialturfexpress.com/wp-content/uploads/2015/04/Artificialturf_support.jpg" alt="Synthetic Turf">
-                  <div class="card-body">
-                    <h4 class="card-title">Synthetic Turf</h4>
-                    <p class="card-text">
-                      Want a green lawn year-round? Opt for synthetic turf and we will take care of the installation and maintenance.
-                    </p>
-                    <a href="#" class="btn btn-primary">Request Service</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="card">
-                  <img class="card-img-top" src="http://wichita-sprinklers.com/wp-content/uploads/2015/05/gal9.jpg" alt="Sprinkler Installation">
-                  <div class="card-body">
-                    <h4 class="card-title">Sprinkler Installation</h4>
-                    <p class="card-text">
-                      Don't have time to water your lawn? Let us automate the process for you by installing a new irrigation system.
-                    </p>
-                    <a href="#" class="btn btn-primary">Request Service</a>
+                  <div class="row my-4" id="contact-members">
+                    <div class="col-lg-4 text-center">
+                      <a href="tel:8185546274" class="btn btn-outline-dark"><strong>Call Cecilio</strong> (818) 554-6274</a>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                      <a href="tel:3239868962" class="btn btn-outline-dark"><strong>Call Raymond</strong> (323) 986-8962</a>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                      <a href="tel:8184478383" class="btn btn-outline-dark"><strong>Call Kevin</strong> (818) 447-8383</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div id="work-neighborhood">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12 text-center">
-                <div class="container">
-                  <h1 class="text-dark">Cities We Serve</h1>
-                </div>
-              </div>
-            </div>
-            {% for city_chunk in work_radius %}
-            <div class="row">
-              {% for city in city_chunk  %}
-              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-                {{ city }}
-              </div>
-              {% endfor %}
-            </div>
-            {% endfor %}
           </div>
         </div>
       </div>
@@ -215,20 +172,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
     <script src="{% static 'home/js/main.js' %}" charset="utf-8"></script>
-
-    <script type="text/javascript">
-      let job_names = ['Gardening Service          ', 'Sodding and Reseeding      ', 'Valve Replacement          ', 'Sprinkler Installation     ', 'Synthetic Turf Installation', 'Mulch and Gravel Design    ', 'Tree Trimming              ', 'Palm and Tree Cleanup      ', 'Stump Grinding             '];
-      let servicesSpan = '#job-name-var';
-      let counter = 1;
-
-      $(servicesSpan).text(job_names[0]);
-      setInterval(function() {
-        displayServices(servicesSpan);
-      }, 4000);
-
-
-
-
-    </script>
   </body>
 </html>

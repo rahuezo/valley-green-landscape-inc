@@ -44,7 +44,7 @@ h1 {
 
 #footer a:hover {
   text-decoration: none;
-  font-size: 1.05rem; 
+  font-size: 1.05rem;
   color: #FFF;
 }
 
@@ -83,12 +83,12 @@ h1 {
   font-size: 1.5rem;
 }
 
-#hero-brand h3 a {
+#hero-brand h3 a, h2 a {
   color: #DDD;
   transition: all ease-out 0.1s;
 }
 
-#hero-brand h3 a:hover {
+#hero-brand h3 a:hover, h2 a:hover {
   color: #FFF;
   text-decoration: none;
 }
@@ -135,4 +135,13 @@ button, a {
 
 #work-neighborhood {
   padding-top: 4vh;
+}
+
+#about-paragraph {
+  font-size: 1.5rem;
+}
+
+#contact-members .btn {
+  width: 100%;
+  margin: 5px;
 }
